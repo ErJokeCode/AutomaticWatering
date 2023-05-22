@@ -43,6 +43,7 @@ Arduino Nano
 Реле
 
 ## Схема подключение 
-![Connection scheme](https://github.com/ErJokeCode/AutomaticWatering/blob/main/%D0%A1%D1%85%D0%B5%D0%BC%D0%B0%20%D0%BF%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D1%8F.png)
+
+![Схема подключения](https://github.com/ErJokeCode/AutomaticWatering/assets/132396295/e9ea260f-b564-4749-b554-97f4f1208790)
 
 
