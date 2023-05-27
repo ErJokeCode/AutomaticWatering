@@ -6,7 +6,7 @@ Automatic switching on and off of the relay at a given date and time for a certa
 
 Navigation with an encoder.
 
-It is possible to connect up to 4 relays for connecting an electro valve.
+It is possible to connect up to 4 relays (5V) for connecting an electro valve.
 
 ## Components
 Arduino Nano
@@ -17,10 +17,10 @@ Encoder EC11
 
 Display LCD1602 I2C
 
-Relay
+Relay 5V
 
 ## Connection scheme
-![Connection scheme](https://github.com/ErJokeCode/AutomaticWatering/blob/main/Connection%20scheme.png)
+![Connection scheme](https://github.com/ErJokeCode/AutomaticWatering/assets/132396295/f2849d77-f84f-4f1a-a811-4f4435b3f452)
 
 # Автоматичекий полив
 Автоматический полив в теплицу на основе Arduino Nano. 
@@ -30,7 +30,7 @@ Relay
 
 Навигация при помощи энкодера.
 
-Возможно подключение до 4 реле для подключение электро клапана.
+Возможно подключение до 4 реле (5В) для подключение электро клапана.
 ## Компоненты
 Arduino Nano
 
@@ -40,7 +40,7 @@ Arduino Nano
 
 Дисплей LCD1602 I2C
 
-Реле
+Реле 5В
 
 ## Схема подключение 
 
