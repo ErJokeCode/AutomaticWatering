@@ -4,6 +4,9 @@ LiquidCrystal_I2C lcd(0x27, 16, 2);
 #include <EncButton.h>
 EncButton<EB_TICK, 2, 3, 4> enc;
 
+#include <microDS18B20.h>
+MicroDS18B20<5> sensor;
+
 
 int Relay_first = 9; //Первое реле. Потом подключаем в каждый выход по реле
 int Len_Menu = 3 - 1; //Длинна меню меняем первую цыфру
@@ -32,8 +35,8 @@ bool settings_time = false;
 //Время
 uint32_t time;
 int DAY = 0;
-int HOUR = 0;
-int MIN = 0;
+int HOUR = 13;
+int MIN = 20;
 int SEC = 0;
 char Days[][10] = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
 
@@ -98,6 +101,8 @@ void loop() {
     cnt_time=0;
   }
 
+  // запрос температуры  
+  sensor.requestTemp();
 
   //Для использования инкодера и кнопки
   enc.tick();
@@ -115,6 +120,28 @@ void loop() {
       lcd.print(SEC);
       lcd.setCursor(0, 1);
       lcd.print(Days[DAY]);  
+
+      if (sensor.readTemp()){
+        lcd.setCursor(10, 0);
+        lcd.print(int(floor(sensor.getTemp())));
+        lcd.print(char(223));
+        lcd.print("C ");
+      }
+      else{
+        lcd.setCursor(10, 0);
+        lcd.print("Error");
+      }
+
+      if (analogRead(7) < 1000){
+        lcd.setCursor(10, 1);
+        lcd.print(analogRead(7));
+        lcd.print(" ");
+      }
+      else{
+        lcd.setCursor(10, 1);
+        lcd.print(analogRead(7));
+      } 
+
     }
 
     //Обработчик кручения и переход между страницами
