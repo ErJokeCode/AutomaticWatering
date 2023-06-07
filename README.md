@@ -25,7 +25,7 @@ Relay 5V
 ## Changes in system versions
 1.1 
      
-     - Start
+     - With RTC
 
 1.2 
      
@@ -66,7 +66,7 @@ Arduino Nano
 ## Изменения в версиях системы
 1.1 
      
-     - Начало
+     - С часами реального времени (RTC)
 
 1.2 
      
