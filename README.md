@@ -24,10 +24,15 @@ Relay 5V
 
 ## Changes in system versions
 1.1 - start
+
 1.2 - Without real time clock (RTC)
+
      - Added days of the week
+     
      - Setting hours and days of the week
+     
      - Setting watering on certain days of the week
+     
      - New management
 
 # Автоматичекий полив
@@ -56,10 +61,15 @@ Arduino Nano
 
 ## Изменения в версиях системы
 1.1 - начало
+
 1.2 - Без часов реального времени(RTC)
+
     - Появились дни недели
+    
     - Настройка часов и дней недели
+    
     - Настройка полива по определённым дням недели 
+    
     - Новое управление 
 
 
