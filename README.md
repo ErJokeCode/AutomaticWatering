@@ -24,9 +24,11 @@ Relay 5V
 
 ## Changes in system versions
 1.1 
+     
      - Start
 
 1.2 
+     
      - Without real time clock (RTC)
      
      - Added days of the week
