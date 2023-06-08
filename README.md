@@ -23,11 +23,11 @@ Relay 5V
 ![Connection scheme](https://github.com/ErJokeCode/AutomaticWatering/assets/132396295/f2849d77-f84f-4f1a-a811-4f4435b3f452)
 
 ## Changes in system versions
-1.1 
+1.0 
      
      - With RTC
 
-1.2 
+1.1
      
      - Without real time clock (RTC)
      
@@ -38,6 +38,10 @@ Relay 5V
      - Setting watering on certain days of the week
      
      - New management
+     
+     - Temperature sensor
+     
+     - Soil moisture level sensor
 
 # Автоматичекий полив
 Автоматический полив в теплицу на основе Arduino Nano. 
@@ -64,11 +68,11 @@ Arduino Nano
 ![Схема подключения](https://github.com/ErJokeCode/AutomaticWatering/assets/132396295/e9ea260f-b564-4749-b554-97f4f1208790)
 
 ## Изменения в версиях системы
-1.1 
+1.0 
      
      - С часами реального времени (RTC)
 
-1.2 
+1.1 
      
      - Без часов реального времени(RTC)
      
@@ -79,6 +83,10 @@ Arduino Nano
      - Настройка полива по определённым дням недели 
      
      - Новое управление 
+     
+     - Датчик температуры
+     
+     - Датчик уровня влажности почвы
 
 
 
