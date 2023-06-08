@@ -45,6 +45,10 @@ int timeout = 60; //Время работы экрана в секундах
 int cnt_time = 0; //Счетчик timeout
 bool T_O = true; //Включен экран или нет в начале работы
 
+//Настройки датчика влажности почвы
+int wet = 1000; //Влажная
+
+
 
 
 void setup() {
@@ -112,6 +116,7 @@ void loop() {
 
     //Начальный экран времени
     if ((pos_first%2) == 0){
+      //Время
       lcd.setCursor(0, 0);
       lcd.print(HOUR);
       lcd.print(":");
@@ -121,6 +126,7 @@ void loop() {
       lcd.setCursor(0, 1);
       lcd.print(Days[DAY]);  
 
+      //Температура
       if (sensor.readTemp()){
         lcd.setCursor(10, 0);
         lcd.print(int(floor(sensor.getTemp())));
@@ -132,14 +138,14 @@ void loop() {
         lcd.print("Error");
       }
 
-      if (analogRead(7) < 1000){
+      //Влажность почвы
+      if (analogRead(7) > wet ){
         lcd.setCursor(10, 1);
-        lcd.print(analogRead(7));
-        lcd.print(" ");
+        lcd.print("DRY");
       }
       else{
         lcd.setCursor(10, 1);
-        lcd.print(analogRead(7));
+        lcd.print("WET");
       } 
 
     }
