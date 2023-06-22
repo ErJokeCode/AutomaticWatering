@@ -5,7 +5,7 @@ LiquidCrystal_I2C lcd(0x27, 16, 2);
 EncButton<EB_TICK, 2, 3, 4> enc;
 
 #include <microDS18B20.h>
-MicroDS18B20<5> sensor;
+MicroDS18B20<12> sensor;
 
 
 int Relay_first = 9; //Первое реле. Потом подключаем в каждый выход по реле
